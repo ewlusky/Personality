@@ -9,10 +9,7 @@
     font-size: 1.2em;
   }
   
-  #main {
-    display: flex;
-    flex: 1;
-  }
+  
   #main > article {
     flex: 1;
     order: 1;
@@ -41,18 +38,15 @@ header, footer {
   
 ul {
     list-style: square;
-    position: absolute;
-    bottom: 140px;
-    left: 16px;
-    font-size: 18px;
     font-weight: bold;
+    align-items: flex-end;
 }
 
-p:first-letter {
+#Summary:first-letter {
     text-transform: uppercase;
 }
-p {
-color: #424242;
+#Summary {
+color: darkblue;
 font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
 letter-spacing:0.1em;
 text-align:center;
@@ -63,3 +57,35 @@ font-size: 14pt;
 font-variant: small-caps;
 }
 
+#Communication {
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+    letter-spacing:0.1em;
+    font-size: 0.6em;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h2 {
+    width: 100%;
+    background: #65d4da;
+    color: white;
+    font-size: 100%;
+    text-align: center;
+}
+  
+.sidenav {
+    height: 100%;
+    width: 155px;
+    position: fixed;
+    /* z-index: 2; */
+    opacity: 0.3;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.person {
+    font-size: 0;
+}
